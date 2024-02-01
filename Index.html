@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---  linking Style and Script file    -->
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Interactive Web Playground</title>
+   
+</head>
+<body>
+
+    <header>
+        <h1>Interactive Web Playground</h1>
+    </header>
+
+    <nav>
+        <a href="Index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+        <section id="content-section">
+            <h2>Main Content Section</h2>
+            <p>This is the initial content.</p>
+        </section>
+<!---  Content of sidebar    -->
+        <aside id="sidebar">
+            <h2>Sidebar</h2>
+            <ul>
+                <!---  Setting the onclick  event to changeContent() function in script.js   -->
+                <li onclick="changeContent('Item 1')">Lets change content</li>
+                <li onclick="changeContent('Item 2')">This button also change the content</li>
+                <li onclick="changeContent('Item 3')">This one tooo</li>
+            </ul>
+            <!---  making the buttons for the onclick activity for JS file   -->
+            <button onclick="changeColorScheme()">Change Color Scheme</button>
+            <button onclick="addNewItem()">Add Item</button>
+            <button onclick="removeItem()">Remove Item</button>
+        </aside>
+    </main>
+<!---  Added the footer    -->
+    <footer>
+        Author: Kunwarpreet Singh Saggu
+    </footer>
+
+    
+
+</body>
+</html>
